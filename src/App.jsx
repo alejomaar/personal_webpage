@@ -5,24 +5,37 @@ function App() {
   return (
     <div className="min-h-screen h-screen ">
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col mt-12">
-        <span className="font-bold text-4xl text-indigo-700">Machine Learning &</span>
-        <h1 className="font-bold  text-4xl text-gray-900 ">  Software Engineer</h1>
+        <h1 className="font-bold text-4xl text-indigo-700">
+          Alejandro Aponte
+        </h1>
+        <h1 className="font-bold  text-4xl text-gray-900 ">
+          Machine Learning & Software Engineer
+        </h1>
 
         <img className="w-64 h-64 mt-14" src={profile_photo_img} />
       </div>
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
-        <h2 className="font-bold text-4xl">Who i axm</h2>
-        <h3 className="font-bold">subtitle</h3>
-        <p className="text-lg text-center">
-          I'm Alejandro, I combine the world of data and software, creating
-          products and strategies through problem solving. I am focused on
-          creating solutions based on scalability, interactive systems and
-          multidisciplinary fields.
+        <h2 className="font-bold text-4xl text-indigo-700 mt-7">About me</h2>
+        <p className="text-lg  mt-3">
+          Hi, my name is Alejandro, I'm working as Machine Learning Engineer at
+          Habi, I have 2 years of experience building solutions using AI and
+          software.
+        </p>
+        <p className="text-lg  mt-2">
+          I'm able to solve complex and unusual problems with top tecnologies,
+          problem solving and communication skills, besides I've worked in
+          different industries (Retail,PropTech, Fintech) and also worked with
+          many stakeholders, it allowed me easy communication with different
+          people be technical or not.
+        </p>
+        <p className="text-lg mt-2 ">
+          I particularly enjoy working on Computer Vision and NLP. I've find so
+          many challenges out there and I consider it so intersting, reason I'm
+          always open to study, investigate and experiment continuoslly
         </p>
       </div>
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
-        <h2 className="font-bold text-4xl">Who i am</h2>
-        <h3 className="font-bold">subtitle</h3>
+        <h2 className="font-bold text-4xl  mt-7 mb-3">My skills</h2>
         <div className="max-w-4xl mx-auto grid grid-cols-3 gap-3">
           <div className="">
             <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
@@ -70,8 +83,7 @@ function App() {
       </div>
 
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
-        <h2 className="font-bold text-4xl">My projects</h2>
-        <h3 className="font-bold">check it out</h3>
+        <h2 className="font-bold text-4xl mt-7 mb-6">My projects</h2>
         <div className="grid grid-cols-3 gap-3 grid-template-rows">
           <div className="flex flex-col justify-between">
             <img src={img} />

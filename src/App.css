@@ -7,9 +7,28 @@
 #root,
 body {
   min-height: 100vh;
-  min-width: 100vw;
-  max-width: 100vw;
-  width: 100vw;
-  max-width: 100vw;
-  overflow-x: hidden;
+}
+
+.serif {
+  font-family: "Cormorant Garamond";
+}
+
+.sans_serif {
+  font-family: "Raleway";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond";
+}
+
+p,
+span,
+li,
+a {
+  font-family: "Raleway";
 }
