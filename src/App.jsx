@@ -1,19 +1,24 @@
 import "./App.css";
 import img from "./assets/img.jpg";
 import profile_photo_img from "./assets/profile_photo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import messages from "./constant/messages";
+
 //https://musotoku.com/
 function App() {
   return (
     <div className="min-h-screen h-screen ">
       <nav className="w-full fixed top-0 left-0 right-0 flex h-20 bg-white z-20">
-        <ul class="w-full flex justify-center items-center">
-          <li class="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
+        <ul className="w-full flex justify-center items-center">
+          <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
             About Me
           </li>
-          <li class="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
+          <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
             My Skills
           </li>
-          <li class="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
+          <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
             My Projects
           </li>
         </ul>
@@ -27,13 +32,13 @@ function App() {
         </h1>
 
         <div className="w-full relative flex justify-center items-center">
-          <div class="w-full overflow-hidden absolute top-1/2 border-t border-b border-black">
-            <div class="marquee-container  my-7">
-              <ul class="marquee flex">
-                <li class="mx-3 text-6xl">Computer Vision |</li>
-                <li class="mx-3 text-6xl">NLP |</li>
-                <li class="mx-3 text-6xl">Machine Learning |</li>
-                <li class="mx-3 text-6xl">Software Engineering |</li>
+          <div className="w-full overflow-hidden absolute top-1/2 border-t border-b border-black">
+            <div className="marquee-container  my-7">
+              <ul className="marquee flex">
+                <li className="mx-3 text-6xl">Computer Vision |</li>
+                <li className="mx-3 text-6xl">NLP |</li>
+                <li className="mx-3 text-6xl">Machine Learning |</li>
+                <li className="mx-3 text-6xl">Software Engineering |</li>
               </ul>
             </div>
           </div>
@@ -41,6 +46,23 @@ function App() {
             className="w-64 h-64 mt-14 z-10 rounded-full"
             src={profile_photo_img}
           />
+        </div>
+
+        <div className="flex mt-4">
+          <a
+            href="https://github.com/alejomaar"
+            target="_blank"
+            className="bg-black p-3 cursor-pointer mx-2 rounded-md"
+          >
+            <FontAwesomeIcon icon={faGithub} size="3x" color="white" />
+          </a>
+          <a
+            href="https://github.com/alejomaar"
+            target="_blank"
+            className="bg-black p-3 cursor-pointer mx-2 rounded-md"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="3x" color="white" />
+          </a>
         </div>
       </div>
       <div className="bg-black text-white  min-h-screen">
@@ -69,9 +91,7 @@ function App() {
               <span className="font-bold">Trust</span>
             </div>
             <div className="w-1/2">
-              <p>
-                In addition to my expertise in AI and related technologies
-              </p>
+              <p>In addition to my expertise in AI and related technologies</p>
             </div>
           </div>
           <div className="flex border-t border-white py-3">
@@ -79,9 +99,7 @@ function App() {
               <span className="font-bold">Ethics</span>
             </div>
             <div className="w-1/2">
-              <p>
-                In addition to my expertise in AI and related technologies
-              </p>
+              <p>In addition to my expertise in AI and related technologies</p>
             </div>
           </div>
           <div className="flex border-t border-white py-3">
@@ -89,9 +107,7 @@ function App() {
               <span className="font-bold">Ethics</span>
             </div>
             <div className="w-1/2">
-              <p>
-                In addition to my expertise in AI and related technologies
-              </p>
+              <p>In addition to my expertise in AI and related technologies</p>
             </div>
           </div>
         </div>
@@ -100,48 +116,13 @@ function App() {
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
         <h2 className="font-bold text-4xl  mt-7 mb-3">My skills</h2>
         <div className="max-w-4xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="">
-            <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
-            <p className="text-center">
-              Segmentation, detection, classification, transformation and
-              processing applied to images and videos
-            </p>
-          </div>
-          <div className="">
-            <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
-            <p className="text-center">
-              Segmentation, detection, classification, transformation and
-              processing applied to images and videos
-            </p>
-          </div>
-          <div className="">
-            <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
-            <p className="text-center">
-              Segmentation, detection, classification, transformation and
-              processing applied to images and videos
-            </p>
-          </div>
-          <div className="">
-            <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
-            <p className="text-center">
-              Segmentation, detection, classification, transformation and
-              processing applied to images and videos
-            </p>
-          </div>
-          <div className="">
-            <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
-            <p className="text-center">
-              Segmentation, detection, classification, transformation and
-              processing applied to images and videos
-            </p>
-          </div>
-          <div className="">
-            <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
-            <p className="text-center">
-              Segmentation, detection, classification, transformation and
-              processing applied to images and videos
-            </p>
-          </div>
+          {messages["landing_page"]["skills"].map((info, id) => (
+            <div key={id} className="flex flex-col">
+              <FontAwesomeIcon icon={faLinkedin} size="3x" />
+              <h3 className="font-bold text-2xl text-center">{info.title}</h3>
+              <p className="text-center">{info.description}</p>
+            </div>
+          ))}
         </div>
       </div>
 
