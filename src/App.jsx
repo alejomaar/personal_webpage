@@ -19,10 +19,10 @@ function App() {
         </ul>
       </nav>
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col  h-screen">
-        <h1 className="font-bold text-3xl text-center sans_serif">
+        <h1 className="font-bold text-2xl sm:text-3xl  text-center sans_serif">
           Hi! My name is Alejandro Aponte
         </h1>
-        <h1 className="font-bold text-7xl text-gray-900 text-center ">
+        <h1 className="font-bold px-5 text-5xl sm:text-7xl  text-gray-900 text-center ">
           Machine Learning Engineer
         </h1>
 
@@ -43,8 +43,8 @@ function App() {
           />
         </div>
       </div>
-      <div className="bg-black text-white  h-screen">
-        <div className="max-w-4xl mx-auto flex flex-col border-t border-black py-20 ">
+      <div className="bg-black text-white  min-h-screen">
+        <div className="max-w-4xl px-5 lg:px-0 mx-auto flex flex-col border-t border-black py-20 ">
           <h2 className="font-bold text-6xl mt-7">About me</h2>
           <p className="text-xl mt-3">
             I'm Alejandro, a seasoned Machine Learning Engineer specializing in
@@ -99,7 +99,7 @@ function App() {
 
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
         <h2 className="font-bold text-4xl  mt-7 mb-3">My skills</h2>
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-3">
+        <div className="max-w-4xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="">
             <h3 className="font-bold text-2xl text-center">Computer Vision</h3>
             <p className="text-center">
@@ -147,7 +147,7 @@ function App() {
 
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
         <h2 className="font-bold text-4xl mt-7 mb-6">My projects</h2>
-        <div className="grid grid-cols-3 gap-3 grid-template-rows">
+        <div className="grid grid-template-rows  px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="flex flex-col justify-between">
             <img src={img} />
             <span className="font-bold text-center">
