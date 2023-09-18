@@ -5,25 +5,49 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import messages from "./constant/messages";
+import { Link } from "react-scroll";
 
-//https://musotoku.com/
 function App() {
   return (
     <div className="min-h-screen h-screen ">
       <nav className="w-full fixed top-0 left-0 right-0 flex h-20 bg-white z-20">
         <ul className="w-full flex justify-center items-center">
           <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
-            About Me
+            <Link
+              to="about_me"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              About Me
+            </Link>
           </li>
           <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
-            My Skills
+            <Link
+              to="my_skills"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              My Skills
+            </Link>
           </li>
           <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black">
-            My Projects
+            <Link
+              to="my_projects"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              My Projects
+            </Link>
           </li>
         </ul>
       </nav>
-      <div className="max-w-4xl mx-auto flex justify-center items-center flex-col  h-screen">
+      <div className="max-w-7xl mx-auto flex justify-center items-center flex-col  h-screen">
         <h1 className="font-bold text-2xl sm:text-3xl  text-center sans_serif">
           Hi! My name is Alejandro Aponte
         </h1>
@@ -65,7 +89,7 @@ function App() {
           </a>
         </div>
       </div>
-      <div className="bg-black text-white  min-h-screen">
+      <div className="bg-black text-white  min-h-screen" id="about_me">
         <div className="max-w-4xl px-5 lg:px-0 mx-auto flex flex-col border-t border-black py-20 ">
           <h2 className="font-bold text-6xl mt-7">About me</h2>
           <p className="text-xl mt-3">
@@ -113,7 +137,10 @@ function App() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
+      <div
+        className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
+        id="my_skills"
+      >
         <h2 className="font-bold text-4xl  mt-7 mb-3">My skills</h2>
         <div className="max-w-4xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
           {messages["landing_page"]["skills"].map((info, id) => (
@@ -126,49 +153,27 @@ function App() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
+      <div
+        className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
+        id="my_projects"
+      >
         <h2 className="font-bold text-4xl mt-7 mb-6">My projects</h2>
-        <div className="grid grid-template-rows  px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="flex flex-col justify-between">
-            <img src={img} />
-            <span className="font-bold text-center">
-              Recommend the maximum contrast between black and white
-            </span>
-          </div>
-          <div className="flex flex-col justify-between">
-            <img src={img} />
-            <span className="font-bold text-center">
-              Recommend the maximum contrast between black and white
-            </span>
-          </div>
-          <div className="flex flex-col justify-between">
-            <img src={img} />
-            <span className="font-bold text-center">
-              Recommend the maximum contrast between black and white
-            </span>
-          </div>
-          <div className="flex flex-col justify-between">
-            <img src={img} />
-            <span className="font-bold text-center">
-              Recommend the maximum contrast between black and white
-            </span>
-          </div>
-          <div className="flex flex-col justify-between">
-            <img src={img} />
-            <span className="font-bold text-center">
-              Recommend the maximum contrast between black and white
-            </span>
-          </div>
-          <div className="flex flex-col justify-between">
-            <img src={img} />
-            <span className="font-bold text-center">
-              Recommend the maximum contrast between black and white
-            </span>
-          </div>
+        <div className="w-full grid grid-template-rows  px-5 lg:px-0 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {messages["landing_page"]["projects"].map((info, id) => (
+            <a className="flex flex-col group cursor-pointer">
+              <img src={info.img} />
+              <h3 className="text-xl mt-2 px-2 font-bold  group-hover:underline ">
+                Hierarchical text-conditional image generation with CLIP latents
+              </h3>
+              <span className="px-2">{info.description}</span>
+            </a>
+          ))}
         </div>
       </div>
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col border-t border-black my-14">
-        <p className="text-4xl">Join us in shaping the future of technology.</p>
+        <p className="text-4xl text-center">
+          Join us in shaping the future of technology.
+        </p>
       </div>
       <footer className="bg-black py-3">x</footer>
     </div>
