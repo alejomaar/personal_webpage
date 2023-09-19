@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "landing_page.greeting": "Hi! My name is Alejandro Aponte",
+    "landing_page.occupation": "Machine Learning Engineer",
+    "landing_page.skills_1": "Computer Vision |",
+    "landing_page.skills_2": "NLP |",
+    "landing_page.skills_3": "Machine Learning |",
+    "landing_page.skills_4": "Software Engineering |",
+    "landing_page.description_1": "I have two years of experience as both a machine learning engineer and software engineer. Throughout my journey, I've worked on a wide range of projects, including AI, databases, analytics, data science, backend development, cloud computing, 3D applications, and frontend development. I've also handled various integrations, demonstrating my adaptability and commitment to continuous growth.",
+    "landing_page.description_2": "My standout strengths are in computer vision and natural language processing (NLP). These are the areas where I've concentrated my expertise and passion, and I've successfully applied these skills to tackle complex challenges while working remotely for different organizations. I am committed to ongoing learning and advancement in these cutting-edge fields.",
+    "landing_page.description_3": "When I work with an AI challenge, I approach it with curiosity and confidence, always eager to push the boundaries of what's achievable."
+  }
+}
