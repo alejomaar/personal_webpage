@@ -8,6 +8,18 @@
     "landing_page.skills_4": "Software Engineering |",
     "landing_page.description_1": "I have two years of experience as both a machine learning engineer and software engineer. Throughout my journey, I've worked on a wide range of projects, including AI, databases, analytics, data science, backend development, cloud computing, 3D applications, and frontend development. I've also handled various integrations, demonstrating my adaptability and commitment to continuous growth.",
     "landing_page.description_2": "My standout strengths are in computer vision and natural language processing (NLP). These are the areas where I've concentrated my expertise and passion, and I've successfully applied these skills to tackle complex challenges while working remotely for different organizations. I am committed to ongoing learning and advancement in these cutting-edge fields.",
-    "landing_page.description_3": "When I work with an AI challenge, I approach it with curiosity and confidence, always eager to push the boundaries of what's achievable."
+    "landing_page.description_3": "When I work with an AI challenge, I approach it with curiosity and confidence, always eager to push the boundaries of what's achievable.",
+    "landing_page.skills_section_title_1": "Computer Vision",
+    "landing_page.skills_section_title_2": "NLP",
+    "landing_page.skills_section_title_3": "Analytics",
+    "landing_page.skills_section_title_4": "Databases",
+    "landing_page.skills_section_title_5": "Backend",
+    "landing_page.skills_section_title_6": "Integration",
+    "landing_page.skills_section_description_1": "Image manipulation, detection, segmentation, and compression",
+    "landing_page.skills_section_description_2": "Text manipulation, summarization, clustering, and retrival",
+    "landing_page.skills_section_description_3": "Find patterns in data and visualizate them in different systems",
+    "landing_page.skills_section_description_4": "MySQL, Postgres, SQLServer and Bigquery experience in data manipulation and data modeling",
+    "landing_page.skills_section_description_5": "Advance management of APIs for large and scalable applications",
+    "landing_page.skills_section_description_6": "Ability to integrate and interoperate fields such as AI, cloud, frontend, 3D apps and more! "
   }
 }

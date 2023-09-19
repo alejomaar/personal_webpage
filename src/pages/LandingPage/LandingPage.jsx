@@ -1,38 +1,21 @@
-import React from "react";
-import profile_photo_img from "@assets/profile_photo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React, { useState } from "react";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import messages from "../../constant/messages";
 import Navbar from "./components/Navbar";
 import { useTranslation } from "react-i18next";
 import Headline from "./components/Headline";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills/Skills";
 
 export default function LandingPage() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen h-screen ">
       <Navbar></Navbar>
       <Headline></Headline>
       <AboutMe></AboutMe>
-
-      <div
-        className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
-        id="my_skills"
-      >
-        <h2 className="font-bold text-4xl  mt-7 mb-3">My skills</h2>
-        <div className="max-w-4xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-          {messages["landing_page"]["skills"].map((info, id) => (
-            <div key={id} className="flex flex-col">
-              <FontAwesomeIcon icon={faLinkedin} size="3x" />
-              <h3 className="font-bold text-2xl text-center">{info.title}</h3>
-              <p className="text-center">{info.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Skills></Skills>
 
       <div
         className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
