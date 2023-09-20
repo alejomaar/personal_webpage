@@ -6,14 +6,14 @@ export default function AboutMe() {
   return (
     <div className="bg-black text-white  min-h-screen" id="about_me">
       <div className="max-w-4xl px-5 lg:px-3 lg:px-0 mx-auto flex flex-col border-t border-black py-20 ">
-        <h2 className="font-bold text-6xl mt-7 text-center">About me</h2>
-        <p className="text-xl mt-3  m-auto">
+        <h2 className="font-bold text-6xl mt-7 text-center">About Me</h2>
+        <p className="text-lg md:text-xl mt-3  m-auto">
           {t("landing_page.description_1")}
         </p>
-        <p className="text-xl mt-3  m-auto">
+        <p className="text-lg md:text-xl mt-3  m-auto">
           {t("landing_page.description_2")}
         </p>
-        <p className="text-xl mt-3  m-auto">
+        <p className="text-lg md:text-xl mt-3  m-auto">
           {t("landing_page.description_3")}
         </p>
         <div className="">

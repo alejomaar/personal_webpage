@@ -10,13 +10,14 @@ export default function Skills() {
       className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
       id="my_skills"
     >
-      <h2 className="font-bold text-4xl  mt-7 mb-3">My skills</h2>
-      <div className="max-w-4xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+      <h2 className="font-bold text-4xl  mt-7 mb-3">Skills</h2>
+      <p> Some of my skills, and I'm always looking to learn more.  </p>
+      <div className="max-w-5xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
         {data.map((info, id) => (
           <div key={id} className="flex flex-col">
             <FontAwesomeIcon icon={info.icon} size="3x" />
             <h3 className="font-bold text-2xl text-center">{t(info.title)}</h3>
-            <p className="text-center">{t(info.description)}</p>
+            <p className="text-center text-sm md:text-base">{t(info.description)}</p>
           </div>
         ))}
       </div>

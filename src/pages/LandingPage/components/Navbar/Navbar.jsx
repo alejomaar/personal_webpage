@@ -21,7 +21,7 @@ export default function Navbar() {
             offset={0}
             duration={500}
           >
-            About Me
+            About
           </Link>
         </li>
         <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black cursor-pointer">
@@ -32,7 +32,7 @@ export default function Navbar() {
             offset={-50}
             duration={500}
           >
-            My Skills
+            Skills
           </Link>
         </li>
         <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black cursor-pointer">
@@ -43,7 +43,7 @@ export default function Navbar() {
             offset={-50}
             duration={500}
           >
-            My Projects
+            Projects
           </Link>
         </li>
       </ul>
