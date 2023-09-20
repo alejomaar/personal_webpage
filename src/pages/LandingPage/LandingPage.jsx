@@ -21,8 +21,9 @@ export default function LandingPage() {
         className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
         id="my_projects"
       >
-        <h2 className="font-bold text-4xl mt-7 mb-6">My projects</h2>
-        <div className="w-full grid grid-template-rows  px-5 lg:px-0 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <h2 className="font-bold text-4xl mb-3 mt-7">Personal Projects</h2>
+        <p className="">Here you can see some of the projects I've done</p>
+        <div className="w-full grid grid-template-rows  px-5 lg:px-0 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
           {messages["landing_page"]["projects"].map((info, id) => (
             <a className="flex flex-col group cursor-pointer">
               <img src={info.img} />
