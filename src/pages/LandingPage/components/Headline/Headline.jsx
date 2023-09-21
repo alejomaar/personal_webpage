@@ -59,7 +59,7 @@ export default function Headline() {
       </div>
       <div class="scroll-down absolute flex flex-col items-center right-5 md:right-12 lg:right-24 bottom-5">
         <img class="w-4 animate-bounce" src={arrow} />
-        <p>Scroll Down</p>
+        <p>{t("landing_page.scroll_down")}</p>
       </div>
     </div>
   );

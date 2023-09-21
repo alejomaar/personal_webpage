@@ -10,12 +10,14 @@ export default function Projects() {
       className="max-w-7xl mx-auto flex justify-center items-center flex-col border-t border-black my-14"
       id="my_projects"
     >
-      <h2 className="font-bold text-4xl mb-3 mt-7">Personal Projects</h2>
-      <p className="">Here you can see some of the projects I've done</p>
-      <p className="">(Soon more)</p>
+      <h2 className="font-bold text-4xl mb-3 mt-7">
+        {t("landing_page.project.title")}
+      </h2>
+      <p className="">{t("landing_page.project.description")}</p>
+      <p className="">{t("landing_page.project.disclaimer")}</p>
       <div className="w-full grid grid-template-rows  px-5 lg:px-3 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {data.map((info, id) => (
-          <a className="flex flex-col group cursor-pointer">
+          <a key={id} className="flex flex-col group cursor-pointer">
             <div className="w-full aspect-square max-w-full">
               <img
                 src={info.img}

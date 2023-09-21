@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [menuActive, setmenuActive] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("English");
-
+  const { t, i18n } = useTranslation();
   return (
     <nav className="w-full fixed top-0 left-0 right-0 flex h-20 bg-white z-20">
       <div className="w-6/12 md:w-3/12 flex ml-12 items-center ">
         <a className="font-bold sans_serif text-2xl border-black border-2 px-1 select-none	hover:bg-black hover:text-white">
-          <span>{"<"}</span>AlejoAI
+          <span>{"<"}</span>
+          {t("title")}
           <span className="serif text-2xl border-black logo_effect">{"/"}</span>
           {">"}
         </a>
@@ -24,7 +26,7 @@ export default function Navbar() {
             offset={0}
             duration={500}
           >
-            About
+            {t("landing_page.link_1")}
           </Link>
         </li>
         <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black cursor-pointer">
@@ -35,7 +37,7 @@ export default function Navbar() {
             offset={-50}
             duration={500}
           >
-            Skills
+            {t("landing_page.link_2")}
           </Link>
         </li>
         <li className="mx-3 font-bold border-b-2 hover:border-b-2 hover:border-black cursor-pointer">
@@ -46,7 +48,7 @@ export default function Navbar() {
             offset={-50}
             duration={500}
           >
-            Projects
+            {t("landing_page.link_3")}
           </Link>
         </li>
       </ul>
@@ -65,6 +67,7 @@ export default function Navbar() {
                 onClick={() => {
                   setSelectedLanguage("English");
                   setDropdownOpen(!isDropdownOpen);
+                  i18n.changeLanguage("en");
                 }}
                 className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full text-left"
               >
@@ -74,6 +77,7 @@ export default function Navbar() {
                 onClick={() => {
                   setSelectedLanguage("Español");
                   setDropdownOpen(!isDropdownOpen);
+                  i18n.changeLanguage("es");
                 }}
                 className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full text-left"
               >
@@ -95,17 +99,24 @@ export default function Navbar() {
               className="ml-auto font-bold cursor-pointer mr-8 text-right"
               onClick={() => setmenuActive(false)}
             >
-              Close
+              {t("close_menu")}
             </p>
             <ul className="mx-5 mt-5">
               <li className="cursor-pointer py-1 border-t group">
-                <span className="group-hover:border-b">About Me</span>
+                <span className="group-hover:border-b">
+                  {t("landing_page.link_1")}
+                </span>
               </li>
               <li className="cursor-pointer py-1 border-t group">
-                <span className="group-hover:border-b">My Skills</span>
+                <span className="group-hover:border-b">
+                  {t("landing_page.link_2")}
+                </span>
               </li>
               <li className="cursor-pointer py-1 border-t group border-b">
-                <span className="group-hover:border-b"> My Projects</span>
+                <span className="group-hover:border-b">
+                  {" "}
+                  {t("landing_page.link_3")}
+                </span>
               </li>
             </ul>
           </div>
