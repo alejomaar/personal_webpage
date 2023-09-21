@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="bg-black text-white  min-h-screen" id="about_me">
       <div className="max-w-4xl px-5 lg:px-3 lg:px-0 mx-auto flex flex-col border-t border-black py-20 ">

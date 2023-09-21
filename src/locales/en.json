@@ -26,6 +26,12 @@
     "landing_page.skills_section_description_6": "One of my core strengths is my ability to integrate different systems from database to user view",
     "landing_page.skills_section_description_7": "I've worked with AWS services for train ML models, store files and information, deploy APIs on microservices or serverless and many more",
     "landing_page.skills_section_description_8": "Over the last years, I've built database, backend and frontend systems and made the integratation between them",
-    "landing_page.skills_section_description_9": "I know about 3D dynamics, texture, material and illumination handling, as well as familiarity developing human-computer interactions"
+    "landing_page.skills_section_description_9": "I know about 3D dynamics, texture, material and illumination handling, as well as familiarity developing human-computer interactions",
+    "landing_page.project_1_description": "Build a ML classificator using webscraped images from Google Art & Culture",
+    "landing_page.project_1_title": "Google Art & Culture Image Classification",
+    "landing_page.project_2_description": "Small 3d Online Museum with some interactions",
+    "landing_page.project_2_title": "Interactive 3d Museum",
+    "landing_page.project_3_description": "Setup a MLFlow environment on AWS for collaborative projects ",
+    "landing_page.project_3_title": "MLFlow on AWS"
   }
 }
