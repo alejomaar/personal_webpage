@@ -50,7 +50,7 @@ export default function Headline() {
           <FontAwesomeIcon icon={faGithub} size="3x" color="white" />
         </a>
         <a
-          href="https://github.com/alejomaar"
+          href="https://www.linkedin.com/in/manuelalejandroaponte/"
           target="_blank"
           className="bg-black p-3 cursor-pointer mx-2 rounded-md"
         >

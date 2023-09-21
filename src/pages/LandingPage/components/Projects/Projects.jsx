@@ -17,7 +17,12 @@ export default function Projects() {
       <p className="">{t("landing_page.project.disclaimer")}</p>
       <div className="w-full grid grid-template-rows  px-5 lg:px-3 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {data.map((info, id) => (
-          <a key={id} className="flex flex-col group cursor-pointer">
+          <a
+            href="https://github.com/alejomaar/google-arts-and-culture"
+            target="_blank"
+            key={id}
+            className="flex flex-col group cursor-pointer"
+          >
             <div className="w-full aspect-square max-w-full">
               <img
                 src={info.img}
