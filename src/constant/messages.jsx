@@ -1,5 +1,7 @@
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import img from "../assets/img.jpg";
+import background_google_art_and_culture from "@assets/google_art_and_culture.jpg";
+import background_virtual_museum from "@assets/virtual_museum.png";
+import background_mlflow from "@assets/mlflow.png";
 
 const messages = {
   landing_page: {
@@ -43,27 +45,16 @@ const messages = {
     ],
     projects: [
       {
-        img: img,
-        description: "We show that explicitly generating image representations improves image diversity with minimal loss in photorealism and caption similarity.",
+        img: background_google_art_and_culture,
+        description:
+          "We show that explicitly generating image representations improves image diversity with minimal loss in photorealism and caption similarity.",
       },
       {
-        img: img,
+        img: background_virtual_museum,
         description: "Recommend the maximum contrast between black and white",
       },
       {
-        img: img,
-        description: "Recommend the maximum contrast between black and white",
-      },
-      {
-        img: img,
-        description: "Recommend the maximum contrast between black and white",
-      },
-      {
-        img: img,
-        description: "Recommend the maximum contrast between black and white",
-      },
-      {
-        img: img,
+        img: background_mlflow,
         description: "Recommend the maximum contrast between black and white",
       },
     ],
