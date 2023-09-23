@@ -13,7 +13,7 @@ export default function Skills() {
       <h2 className="font-bold text-4xl  mt-7 mb-3">
         {t("landing_page.skills.title")}
       </h2>
-      <p>{t("landing_page.skills.description")} </p>
+      <p className="px-5">{t("landing_page.skills.description")} </p>
       <div className="max-w-5xl px-5 lg:px-0 mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
         {data.map((info, id) => (
           <div key={id} className="flex flex-col">
