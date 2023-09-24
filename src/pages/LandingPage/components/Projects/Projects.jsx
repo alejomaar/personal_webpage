@@ -18,7 +18,7 @@ export default function Projects() {
       <div className="w-full grid grid-template-rows  px-5 lg:px-3 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {data.map((info, id) => (
           <a
-            href="https://github.com/alejomaar/google-arts-and-culture"
+            href={info?.href}
             target="_blank"
             key={id}
             className="flex flex-col group cursor-pointer"
