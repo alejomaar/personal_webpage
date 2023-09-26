@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 export default function AboutMe() {
   const { t } = useTranslation();
   return (
-    <div className="bg-black text-white  min-h-screen" id="about_me">
-      <div className="max-w-4xl px-5 lg:px-3 lg:px-0 mx-auto flex flex-col border-t border-black py-20 ">
+    <div className="bg-black text-white " id="about_me">
+      <div className="max-w-4xl px-5 lg:px-3 lg:px-0 mx-auto flex flex-col border-t border-black py-10 ">
         <h2 className="font-bold text-6xl mt-7 text-center">About Me</h2>
         <p className="text-lg md:text-xl mt-3  m-auto">
           {t("landing_page.description_1")}

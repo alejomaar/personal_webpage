@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  /*font-size: calc(1vw+10px);*/
+  font-size: calc(1vw+5px);
+}
+
 #root,
 body {
   min-height: 100vh;

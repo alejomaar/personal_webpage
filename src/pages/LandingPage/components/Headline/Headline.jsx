@@ -9,10 +9,10 @@ export default function Headline() {
   const { t } = useTranslation();
   return (
     <div className="max-w-7xl mx-auto flex justify-center items-center flex-col  h-screen">
-      <h1 className="font-bold text-xl md:text-2xl lg:text-3xl  text-center sans_serif px-4">
+      <h1 className="font-bold text-2xl md:text-2xl lg:text-3xl  text-center sans_serif px-4">
         {t("landing_page.greeting")}
       </h1>
-      <h1 className="font-bold px-5 text-3xl md:text-5xl lg:text-7xl  text-gray-900 text-center px-4">
+      <h1 className="font-bold px-5 text-4xl md:text-5xl lg:text-7xl  text-gray-900 text-center px-4">
         {t("landing_page.occupation")}
       </h1>
 
@@ -57,9 +57,9 @@ export default function Headline() {
           <FontAwesomeIcon icon={faLinkedin} size="3x" color="white" />
         </a>
       </div>
-      <div class="scroll-down absolute flex flex-col items-center right-5 md:right-12 lg:right-24 bottom-5">
+      <div class="scroll-down absolute flex flex-col items-center right-8 md:right-12 lg:right-24 bottom-5 w-8">
         <img class="w-4 animate-bounce" src={arrow} />
-        <p>{t("landing_page.scroll_down")}</p>
+        <p className="text-center">{t("landing_page.scroll_down")}</p>
       </div>
     </div>
   );
